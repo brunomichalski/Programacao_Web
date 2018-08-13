@@ -1,24 +1,21 @@
-div.ingles{
-    width: 620px;
-    background: orangered;
-    float: left;
+span.ingles{
     text-align: right;
-    padding-right: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
+
+span.traducao{
+    padding: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
 
 h1{
-    color: blue
-}
-
-div.traducao{
-    background: red;
-    text-align: left;
-    padding-right: 10px;
-}
-
-
-
-h1{
+    color: blue;
     text-align: right;
     padding-right: 990px;  
     text-align: left; 
@@ -28,9 +25,89 @@ h3{
     text-align: right;
     padding-right: 1000px;   
     text-align: left;
+    color: darkcyan
 }
 
 div.cabecalho{
     float: right;
+    margin-left: 20px;
 }
 
+.flex{
+    display: flex;
+    justify-content: center; 
+    background:gray;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.flex2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#musicas{
+    display: flex;
+    justify-content: space-around; 
+}
+
+#nomes-musicas{
+    display: flex;
+    justify-content: space-around; 
+}
+
+#nomes-musicas a{
+    color: white;
+}
+
+body{
+    background: black;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a{
+    font-size: 30px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: gray;
+}
+
+.rodape-inicial{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: gray;
+}
+
+legend{
+    color: white;
+}
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    
+}
+
+p.musica:first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+p::first-letter{
+    color: red;
+}
