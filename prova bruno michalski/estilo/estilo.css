@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.cabecalho{
+    background-color: blue;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    
+}
+
+a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label.veiculos{
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+    border-color: white;
+    
+}
+
+label.direita{
+    text-align: right;
+}
+

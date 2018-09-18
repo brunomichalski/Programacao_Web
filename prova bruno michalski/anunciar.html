@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <script type="text/javascript" src="javascript/anunciar.js"></script>
+    <title>Anuncio</title>
+</head>
+
+    <body>
+        <div class="cabecalho"> 
+            
+            <label class="veiculos">Veiculos</label>
+            <a href="contato.html">Contato</a>
+            <a href="anunciar.html">Anunciar</a>
+            <a href="index.html">Início </a>
+        </div>
+
+        <form name="formA">
+            <fieldset>
+            <legend>Cadastro do anúncio</legend>
+            <label>Título do anúncio:</label>
+            <input type="text" name="nome" id="nome"> <br><br>
+            <label>Descrição do anuncio:</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br><br>
+            <label>Ano do carro:</label>
+            <input type="number" name="ano" id="ano"><br><br>
+            <label>Quilometragem do carro:</label>
+            <input type="number" name="km" id="km"><br><br>
+            <label>Valor do carro:</label>
+            <input type="number" name="valor" id="valor"><br><br>
+            <label>Tipo de combustível:</label><br>
+            <input type="radio" name="combo" id="combo" value="Gasolina"/> Gasolina<br>
+            <input type="radio" name="combo" id="combo" value="Etanol"/> Etanol<br>
+            <input type="radio" name="combo"  id="combo" value="Flex"/> Flex<br><br>
+            <label>Imagem do veículo:</label>
+            <input type="file" id="arquivo"><br><br>
+            <input  type="submit" value="Anunciar" onclick="validar()">
+            </fieldset>
+        </form>
+    </body>
+</html>
