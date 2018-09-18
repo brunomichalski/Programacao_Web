@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular peso</title>
+    <script>
+        function Calcular_peso(peso){
+            var peso = document.form.peso.value;
+            var altura = document.form.altura.value;
+            
+            if (form.sex[0].checked){
+                var peso_homem = (72.7 * altura) - 58
+                alert("O peso ideal é: "+ peso_homem)
+            };
+            if (form.sex[1].checked){
+                var peso_mulher = (62.1 * altura) - 44.7
+                alert("O peso ideal é: "+ peso_mulher)
+            };
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <fieldset>
+            <legend>Peso ideal</legend>
+            <label>Peso</label>
+            <input type="text" name="peso" value=""><br>
+            <label>Altura</label>
+            <input type="text" name="altura" value=""><br>  
+            <label>Masculino</label>
+            <input type="radio" name="sex" value="1"><br>
+            <label>Feminino</label>
+            <input type="radio" name="sex" value="Feminino"><br>
+            <input type="button" name="enviar" id="enviar" value="Resultado" onclick="Calcular_peso(form)">
+    </form>
+</fieldset>
+</body>
+</html>
